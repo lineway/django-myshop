@@ -9,10 +9,7 @@ class CategoryAdmin(admin.ModelAdmin):
 admin.site.register(Category, CategoryAdmin)
 
 
-class ProductImageAdmin(admin.ModelAdmin):
-    list_display = ['image', 'slug']
-
-admin.site.register(ProductImage, ProductImageAdmin)
+admin.site.register(ProductImage)
 
 
 class ProductAdmin(admin.ModelAdmin):

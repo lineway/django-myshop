@@ -24,14 +24,6 @@ class Category(models.Model):
 
 class ProductImage(models.Model):
     image = models.ImageField(upload_to='products/%Y/%m/%d', blank=True)
-    slug = models.SlugField(max_length=200, db_index=True, unique=True)
-
-    class Meta:
-        ordering = ('image',)
-        verbose_name = 'image'
-
-    def __str__(self):
-        return self.image
 
 
 class Product(models.Model):
